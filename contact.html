@@ -17,39 +17,62 @@
          <img src="images/logo.png" alt="Beggy Logo" class="logo-img" />
         </a>
         <div class="collapse-icon">
-          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+          <button class="hamburger" type="button" onclick="toggleMenu()" aria-label="Open menu">Menu</button>
         </div>
         <div class="nav-links" id="navLinks">
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
           <a href="tech.html">Tech Stack</a>
+          <a href="achievements.html">Achievements</a>
           <a href="certificate.html">Certificate</a>
           <a class="active" href="#contact">Contact</a>
         </div>
       </div>
-      <div class="h2">
-        <h1>Contact Me</h1>
-      </div>
-      <div class="contact-text">
-        <p>Hey there! Got something on your mind? Whether it’s a project or a question. Feel free to reach out, I’d love to hear from you!</p>
-      </div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/beggy-balictar" target="_blank" class="social-button">
-        <img src="images/LinkedIn.png" alt="LinkedIn" class="social-icon" />
-        <span>LinkedIn</span>
-        </a>
-        <a href="https://github.com/beggy-balictar" target="_blank" class="social-button">
-        <img src="images/github.png" alt="GitHub" class="social-icon" />
-        <span>GitHub</span>
-        </a>
-      </div>
-      <div class="container-form">
-        <form class="contact-form" action="https://formspree.io/f/xwpoovek" method="post">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="Message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+      <div class="contact-layout">
+        <div class="contact-intro">
+          <h1 class="abt__title">Contact Me</h1>
+          <p>Hey there! Got something on your mind? Whether it’s a project or a question. Feel free to reach out, I’d love to hear from you!</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/beggy-balictar" target="_blank" class="social-button">
+              <span class="social-mark">
+                <img src="images/LinkedIn.png" alt="" class="social-icon" />
+              </span>
+              <span>LinkedIn</span>
+              <svg class="social-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+            </a>
+            <a href="https://github.com/beggy-balictar" target="_blank" class="social-button">
+              <span class="social-mark social-mark--git">
+                <img src="images/github.png" alt="" class="social-icon" />
+              </span>
+              <span>GitHub</span>
+              <svg class="social-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="container-form">
+          <form class="contact-form" action="https://formspree.io/f/xwpoovek" method="post">
+            <h2 class="contact-form-title">Send a message</h2>
+            <p class="contact-form-note">I'll get back to you as soon as I can.</p>
+            <div class="contact-fields">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@email.com" required />
+              </label>
+            </div>
+            <label class="contact-message">
+              <span>Message</span>
+              <textarea name="Message" placeholder="Write your message here..." required></textarea>
+            </label>
+            <button type="submit">
+              Send message
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-7-6 16-2.5-6.5L4 12z"></path></svg>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>

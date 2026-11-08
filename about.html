@@ -5,41 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beggy Balictar | About Me</title>
     <link rel="icon" type="image/x-icon" href="images/icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css" />
   </head>
   <body>
-    <div class="about-container">
-      <div class="topnav">
+    <div class="topnav">
         <a href="index.html" class="logo">
          <img src="images/logo.png" alt="Beggy Logo" class="logo-img">
         </a>
         <div class="collapse-icon">
-          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+          <button class="hamburger" type="button" onclick="toggleMenu()" aria-label="Open menu">Menu</button>
         </div>
         <div class="nav-links" id="navLinks">
           <a class="active" href="#about">About</a>
           <a href="projects.html">Projects</a>
           <a href="tech.html">Tech Stack</a>
+          <a href="achievements.html">Achievements</a>
           <a href="certificate.html">Certificate</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
-      <div class="h1">
-        <h1>About Me</h1>
-      </div>
-      <section id="about" class="about-container">
-        <div class="about-box">
-          <p class="about-para">
-            I’m Beggy Balictar, a second-year BSIT student at St. Dominic College of Asia. I’m still in the early part of my journey in tech, and I’m slowly learning how programming works. Sometimes it gets confusing, but I enjoy discovering how things are made behind websites and apps. Little by little, I’m building my confidence, and I’m proud of the progress I’ve made so far.
-          </p>
-          <p class="about-para">
-            My interest in web development and cybersecurity started with curiosity — wondering how websites work and how online systems stay safe. I like exploring new things and finding ways to fix or improve problems. Even though I still have a lot to learn, I’m excited to keep growing and hopefully build things that are helpful to others. I believe that with patience, effort, and the right mindset, I’ll be able to find where I fit in the tech field.
-          </p>
+    <section class="abt" id="about">
+      <div class="abt__glow" aria-hidden="true"></div>
+      <div class="abt__inner">
+        <div class="abt__head">
+          <h2 class="abt__title">About Me</h2>
+          <div class="abt__divider" aria-hidden="true">
+            <span class="abt__divider-line"></span>
+            <span class="abt__divider-dot"></span>
+            <span class="abt__divider-line"></span>
+          </div>
         </div>
-      </section>
-    </div>
+        <div class="abt__card">
+          <div class="abt__beam" aria-hidden="true"></div>
+          <div class="abt__body">
+            <span class="abt__mote abt__mote--1" aria-hidden="true"></span>
+            <span class="abt__mote abt__mote--2" aria-hidden="true"></span>
+            <span class="abt__mote abt__mote--3" aria-hidden="true"></span>
+            <span class="abt__mote abt__mote--4" aria-hidden="true"></span>
+            <span class="abt__code" aria-hidden="true">&lt;/&gt;</span>
+            <div class="abt__photo-wrap">
+              <div class="abt__photo-back" aria-hidden="true"></div>
+              <div class="abt__photo-box">
+                <img class="abt__photo" src="images/about-me.jpg" alt="Beggy Balictar">
+                <span class="abt__sheen" aria-hidden="true"></span>
+              </div>
+              <span class="abt__bracket" aria-hidden="true"></span>
+            </div>
+            <div class="abt__text">
+              <p class="abt__para">I’m Beggy Balictar, a fourth-year BSIT student at St. Dominic College of Asia. I’m still in the early part of my journey in tech, and I’m slowly learning how programming works. Sometimes it gets confusing, but I enjoy discovering how things are made behind websites and apps. Little by little, I’m building my confidence, and I’m proud of the progress I’ve made so far.</p>
+              <p class="abt__para">My interest in web development and cybersecurity started with curiosity — wondering how websites work and how online systems stay safe. I like exploring new things and finding ways to fix or improve problems. Even though I still have a lot to learn, I’m excited to keep growing and hopefully build things that are helpful to others.</p>
+              <div class="abt__rule" aria-hidden="true"></div>
+              <blockquote class="abt__quote">
+                <svg class="abt__quote-mark" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 6C4.5 7 3 9.6 3 13v5h6v-6H6c0-2 .8-3.4 2.4-4.1L7.5 6zm10 0c-3 1-4.5 3.6-4.5 7v5h6v-6h-3c0-2 .8-3.4 2.4-4.1L17.5 6z"/></svg>
+                <p>With patience, effort, and the right mindset, I’ll be able to find where I fit in the tech field.</p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>

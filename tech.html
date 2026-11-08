@@ -17,103 +17,117 @@
         <img src="images/logo.png" alt="Beggy Logo" class="logo-img" />
         </a>
         <div class="collapse-icon">
-          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+          <button class="hamburger" type="button" onclick="toggleMenu()" aria-label="Open menu">Menu</button>
         </div>
         <div class="nav-links" id="navLinks">
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
           <a class="active" href="#tech">Tech Stack</a>
+          <a href="achievements.html">Achievements</a>
           <a href="certificate.html">Certificate</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
       <div class="h1">
-        <h1>Tech Stack</h1>
+        <h1 class="abt__title">Tech Stack</h1>
+        <div class="abt__divider" aria-hidden="true">
+          <span class="abt__divider-line"></span>
+          <span class="abt__divider-dot"></span>
+          <span class="abt__divider-line"></span>
+        </div>
       </div>
       <div class="paragraph">
         <p>Throughout my journey, I’ve had the chance to work with various programming languages and tools, each contributing to my growth.</p>
         <p>I’ve relied on these tools to bring ideas to life. As the technology evolves, I’m always excited to dive into new technologies and expand my ever-growing toolkit.</p>
       </div>
       <div class="tech-stack">
-        <div class="tech-card">
+        <div class="tech-card" style="--glow:#3b82f6">
           <img src="images/c.png" alt="C Language" />
           <p>C</p>
         </div>
-        <div class="tech-card">
+        <div class="tech-card" style="--glow:#f97316">
           <img src="images/java.png" alt="Java" />
           <p>Java</p>
         </div>
-        <div class="tech-card">
-          <img src="images/html.png" alt="HTML" />
-          <p>HTML</p>
-        </div>
-        <div class="tech-card">
-          <img src="images/css.png" alt="CSS" />
-          <p>CSS</p>
-        </div>
-        <div class="tech-card">
-          <img src="images/androidstudio.png" alt="Android Studio" />
-          <p>Android Studio</p>
-        </div>
-        <div class="tech-card">
-          <img src="images/github.png" alt="GitHub" />
-          <p>GitHub</p>
-        </div>
-        <div class="tech-card">
-          <img src="images/vscode.png" alt="VSCode" />
-          <p>VS Code</p>
-        </div>
-        <div class="tech-card">
-          <img src="images/sql.png" alt="SQL" />
-          <p>SQL</p>
-        </div>
-        <div class="tech-card">
-          <img src="images/oracleapex.png" alt="Oracle Apex" />
-          <p>Oracle Apex</p>
-        </div>
-        <div class="tech-card">
-          <img src="images/netbeans.png" alt="NetBeans" />
-          <p>NetBeans</p>
-        </div>
-        <div class="tech-card">
-          <img src="images/bootstrap.png" alt="Bootstrap" />
-          <p>Bootstrap</p>
-        </div>
-        <div class="tech-card">
+        <div class="tech-card" style="--glow:#f7df1e">
           <img src="images/javascript.png" alt="JavaScript" />
           <p>JavaScript</p>
         </div>
-        <div class="tech-card">
-          <img src="images/flutter.png" alt="Flutter" />
-          <p>Flutter</p>
-        </div>
-        <div class="tech-card">
+        <div class="tech-card" style="--glow:#2ec4ff">
           <img src="images/dart.png" alt="Dart" />
           <p>Dart</p>
         </div>
-        <div class="tech-card">
-          <img src="images/firebase.png" alt="Firebase" />
-          <p>Firebase</p>
+        <div class="tech-card" style="--glow:#e11d48">
+          <img src="images/sql.png" alt="SQL" />
+          <p>SQL</p>
         </div>
-        <div class="tech-card">
-          <img src="images/render.jpeg" alt="Render" />
-          <p>Render</p>
+        <div class="tech-card" style="--glow:#e44d26">
+          <img src="images/html.png" alt="HTML" />
+          <p>HTML</p>
         </div>
-        <div class="tech-card">
+        <div class="tech-card" style="--glow:#2965f1">
+          <img src="images/css.png" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="tech-card" style="--glow:#7952b3">
+          <img src="images/bootstrap.png" alt="Bootstrap" />
+          <p>Bootstrap</p>
+        </div>
+        <div class="tech-card" style="--glow:#61dafb">
+          <img src="images/react.png" alt="React" />
+          <p>React</p>
+        </div>
+        <div class="tech-card tech-card--light" style="--glow:#e8eef5">
+          <img src="images/nextjs.png" alt="Next.js" />
+          <p>Next.js</p>
+        </div>
+        <div class="tech-card" style="--glow:#54c5f8">
+          <img src="images/flutter.png" alt="Flutter" />
+          <p>Flutter</p>
+        </div>
+        <div class="tech-card" style="--glow:#3ddc84">
+          <img src="images/androidstudio.png" alt="Android Studio" />
+          <p>Android Studio</p>
+        </div>
+        <div class="tech-card" style="--glow:#5cde4a">
           <img src="images/node.png" alt="Node.js" />
           <p>Node.js</p>
         </div>
-        <div class="tech-card">
+        <div class="tech-card tech-card--light" style="--glow:#d7dee8">
           <img src="images/express.svg" alt="Express" />
           <p>Express</p>
         </div>
-        <div class="tech-card">
+        <div class="tech-card" style="--glow:#ffca28">
+          <img src="images/firebase.png" alt="Firebase" />
+          <p>Firebase</p>
+        </div>
+        <div class="tech-card" style="--glow:#00ed64">
+          <img src="images/mongodb.svg" alt="MongoDB" />
+          <p>MongoDB</p>
+        </div>
+        <div class="tech-card" style="--glow:#f80000">
+          <img src="images/oracleapex.png" alt="Oracle APEX" />
+          <p>Oracle APEX</p>
+        </div>
+        <div class="tech-card" style="--glow:#007acc">
+          <img src="images/vscode.png" alt="VS Code" />
+          <p>VS Code</p>
+        </div>
+        <div class="tech-card" style="--glow:#3dba8b">
+          <img src="images/netbeans.png" alt="NetBeans" />
+          <p>NetBeans</p>
+        </div>
+        <div class="tech-card tech-card--light" style="--glow:#c9d1d9">
+          <img src="images/github.png" alt="GitHub" />
+          <p>GitHub</p>
+        </div>
+        <div class="tech-card" style="--glow:#ff6c37">
           <img src="images/postman.svg" alt="Postman" />
           <p>Postman</p>
         </div>
-        <div class="tech-card">
-          <img src="images/mongodb.svg" alt="MongoDB" />
-          <p>MongoDB</p>
+        <div class="tech-card tech-card--render" style="--glow:#c9d1d9">
+          <img src="images/render.jpeg" alt="Render" />
+          <p>Render</p>
         </div>
       </div>
     </div>

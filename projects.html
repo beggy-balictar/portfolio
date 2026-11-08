@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beggy Balictar | Home</title>
+    <title>Beggy Balictar | Projects</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -18,51 +18,193 @@
         <img src="images/logo.png" alt="Beggy Logo" class="logo-img">
         </a>
         <div class="collapse-icon">
-          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+          <button class="hamburger" type="button" onclick="toggleMenu()" aria-label="Open menu">Menu</button>
         </div>
         <div class="nav-links" id="navLinks">
           <a href="about.html">About</a>
           <a class="active" href="#projects">Projects</a>
           <a href="tech.html">Tech Stack</a>
+          <a href="achievements.html">Achievements</a>
           <a href="certificate.html">Certificate</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
-      <div class="h1">
-        <h1>My Projects</h1>
+      <div class="achievement-header">
+        <h1 class="abt__title">My Projects</h1>
+        <div class="abt__divider" aria-hidden="true">
+          <span class="abt__divider-line"></span>
+          <span class="abt__divider-dot"></span>
+          <span class="abt__divider-line"></span>
+        </div>
+        <div class="achievement-filters" id="projectFilters">
+          <button type="button" class="active" data-panel="all">All</button>
+          <button type="button" data-panel="iot">IoT Project</button>
+          <button type="button" data-panel="capstone">Capstone Project</button>
+          <button type="button" data-panel="third-year">Third-Year Projects</button>
+        </div>
       </div>
-      <section id="projects" class="projects-container">
-        <div class="project-card">
+      <section id="iot" class="project-panel active">
+        <article class="project-card project-card--brief">
+          <div class="brief-side">
+            <img src="images/stylehair.jpg" alt="StyleHair project">
+            <div class="brief-role">
+              <p class="brief-label">
+                <span class="brief-role-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="6" y="3.5" width="12" height="17" rx="2"></rect><path d="M9 8.5h6M9 12h6M9 15.5h4"></path></svg>
+                </span>
+                My Role
+              </p>
+              <h3>Backend Developer</h3>
+              <p>I built the backend of the system and also helped write the project documentation.</p>
+            </div>
+            <div class="brief-tech-block">
+              <p class="brief-label">Technologies / Components</p>
+              <div class="brief-tech">
+                <div class="project-tags">
+                  <span>Smartphone Camera</span>
+                  <span>Node.js</span>
+                  <span>REST API</span>
+                  <span>PostgreSQL</span>
+                  <span>React / Next.js</span>
+                  <span>Wi-Fi / Mobile Data</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker">
+              <span class="project-index">01</span>
+              <span class="project-line"></span>
+              <span class="project-type">IoT Project</span>
+            </div>
+            <h2>StyleHair</h2>
+            <p class="brief-subtitle">A Smart Facial Analysis Platform for Personalized Hairstyle Recommendation</p>
+            <p>StyleHair recommends hairstyles based on a person’s facial features. Users scan their face with their smartphone camera or upload a photo, and the system analyzes their face shape, structure and proportions to suggest hairstyles that suit them. Results are saved to a central database, and a web admin dashboard manages hairstyle catalogs and activity, replacing guesswork in barbershops with data-driven recommendations.</p>
+            <p class="brief-label">Objectives</p>
+            <ol class="brief-steps">
+              <li>Analyze facial features like face shape, jawline and proportions</li>
+              <li>Connect the phone camera to a database-driven app in real time</li>
+              <li>Record customer profiles, analysis results, recommendations and service history</li>
+              <li>Evaluate accuracy, response time, reliability and usability</li>
+            </ol>
+            <div class="brief-result">
+              <p class="brief-label">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M8.5 12.2l2.3 2.3 4.7-5"></path></svg>
+                Project Output / Result
+              </p>
+              <p>A working prototype with mobile facial capture, backend analysis and recommendations, central data storage and a web admin dashboard. It performed consistently in controlled testing; full barbershop deployment is planned as future work.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="capstone" class="project-panel"></section>
+      <section id="third-year" class="project-panel active">
+        <article class="project-card">
           <div class="project-image">
             <img src="images/quizio.jpg" alt="Quizio Project">
           </div>
           <div class="project-content">
+            <div class="project-kicker">
+              <span class="project-index">01</span>
+              <span class="project-line"></span>
+              <span class="project-type">Mobile App</span>
+            </div>
             <h2>Quizio</h2>
-            <p>
-              Quizio is a mobile quiz application that allows users to create custom
-              questions and multiple-choice answers. After creating a set of questions,
-              users can take the quiz, see their scores, and review the correct answers.
-              The app also provides options to retake the same quiz or create a new set
-              of questions, making learning more interactive and fun.
-            </p>
+            <p>A mobile quiz app where users create their own questions, take the quiz, and review how they did. It makes learning more interactive and fun.</p>
+            <ul class="project-points">
+              <li>Create custom questions with multiple-choice answers</li>
+              <li>Take the quiz and see your score</li>
+              <li>Review the correct answers after each quiz</li>
+              <li>Retake the same quiz or start a new set</li>
+            </ul>
+            <p class="project-built">Built with</p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>XML</span>
+              <span>Android Studio</span>
+            </div>
           </div>
-        </div>
-        <div class="project-card">
+        </article>
+        <article class="project-card">
           <div class="project-image">
-            <img src="images/cosycuisine.jpg" alt="Quizio Project">
+            <img src="images/cosycuisine.jpg" alt="Cosy Cuisine project">
           </div>
           <div class="project-content">
+            <div class="project-kicker">
+              <span class="project-index">02</span>
+              <span class="project-line"></span>
+              <span class="project-type">Mobile App</span>
+            </div>
             <h2>Cosy Cuisine</h2>
-            <p>
-              Cosy Cuisine is a mobile application that allows users to browse meals, beverages, and desserts with images
-              and prices. Users can easily add items to their cart, and the app will automatically display a summary of their
-              order along with the total price. With its warm design and tagline “Where Every Meal Feels Like Home,” the
-              app makes ordering more convenient, organized, and enjoyable.
-            </p>
+            <p>A mobile app for browsing meals, beverages, and desserts. Its tagline is “Where Every Meal Feels Like Home.”</p>
+            <ul class="project-points">
+              <li>Browse meals, beverages, and desserts with images and prices</li>
+              <li>Add items to the cart</li>
+              <li>See an order summary with the total price</li>
+            </ul>
+            <p class="project-built">Built with</p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>XML</span>
+              <span>Android Studio</span>
+            </div>
           </div>
-        </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/sdca-ai-assistant.jpg" alt="SDCA AI Assistant project">
+          </div>
+          <div class="project-content">
+            <div class="project-kicker">
+              <span class="project-index">03</span>
+              <span class="project-line"></span>
+              <span class="project-type">Web App</span>
+            </div>
+            <h2>SDCA AI Assistant</h2>
+            <p>A web-based AI chatbot that answers St. Dominic College of Asia students’ questions about admissions, enrollment, tuition and school services anytime, using verified information from school offices.</p>
+            <ul class="project-points">
+              <li>Secure sign-in using an official SDCA email</li>
+              <li>AI chatbot that understands natural-language questions</li>
+              <li>Quick-reply buttons for common topics like applying, programs and tuition</li>
+              <li>Answers verified by five school offices</li>
+              <li>Response rating so students can give feedback</li>
+              <li>Admin panel for updating FAQs and the knowledge base</li>
+            </ul>
+            <p class="project-built">Built with</p>
+            <div class="project-tags">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>NLP.js</span>
+            </div>
+          </div>
+        </article>
       </section>
     </div>
     <script src="main.js"></script>
+    <script>
+      document.querySelectorAll("#projectFilters button").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll("#projectFilters button").forEach((item) => {
+            item.classList.remove("active");
+          });
+          document.querySelectorAll(".project-panel").forEach((panel) => {
+            panel.classList.remove("active");
+          });
+          button.classList.add("active");
+          if (button.dataset.panel === "all") {
+            document.querySelectorAll(".project-panel").forEach((panel) => {
+              if (panel.childElementCount > 0) {
+                panel.classList.add("active");
+              }
+            });
+          } else {
+            document.getElementById(button.dataset.panel).classList.add("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
