@@ -81,6 +81,18 @@
             </div>
           </article>
           <article class="credential-card">
+            <img src="images/cisco-packet-tracer.png" alt="Cisco Networking Academy Getting Started with Cisco Packet Tracer certificate" />
+            <div class="credential-copy">
+              <span class="course-badge">Course Completion</span>
+              <h2>Getting Started with Cisco Packet Tracer</h2>
+              <p class="issuer">Cisco Networking Academy</p>
+              <button type="button" class="view-credential">
+                View credential
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-9 9"></path><path d="M12 6H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5"></path></svg>
+              </button>
+            </div>
+          </article>
+          <article class="credential-card">
             <img src="images/oracle.png" alt="Oracle Academy Java Foundations certificate" />
             <div class="credential-copy">
               <span class="course-badge">Course Completion</span>
@@ -144,7 +156,19 @@
               </button>
             </div>
           </article>
-          <article class="credential-card award-lead">
+          <article class="credential-card">
+            <img src="images/quiz-bee-3rd-place.jpg" alt="Certificate of Recognition for 3rd place in the IT Week Quiz Bee" />
+            <div class="credential-copy">
+              <span class="course-badge">Awards</span>
+              <h2>Quiz Bee, 3rd Place</h2>
+              <p class="issuer">Team Wansi · Domini Xode · November 14, 2023</p>
+              <button type="button" class="view-credential">
+                View credential
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-9 9"></path><path d="M12 6H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5"></path></svg>
+              </button>
+            </div>
+          </article>
+          <article class="credential-card">
             <img src="images/excellence-sia2.jpg" alt="Student Excellence Award for System Integration and Architecture 2" />
             <div class="credential-copy">
               <span class="course-badge">Awards</span>
@@ -165,6 +189,18 @@
             <div class="credential-copy">
               <span class="course-badge">Certificate of Participation</span>
               <h2>DSDAP Caravan</h2>
+              <p class="issuer">DICT Region IV-A · May 29, 2024</p>
+              <button type="button" class="view-credential">
+                View credential
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-9 9"></path><path d="M12 6H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5"></path></svg>
+              </button>
+            </div>
+          </article>
+          <article class="credential-card">
+            <img src="images/egovph-super-app.png" alt="Certificate of Participation for the eGOVPh Super App Orientation" />
+            <div class="credential-copy">
+              <span class="course-badge">Certificate of Participation</span>
+              <h2>eGOVPh Super App Orientation</h2>
               <p class="issuer">DICT Region IV-A · May 29, 2024</p>
               <button type="button" class="view-credential">
                 View credential
@@ -206,6 +242,7 @@
           } else {
             document.getElementById(button.dataset.panel).classList.add("active");
           }
+          playPop(Array.from(document.querySelectorAll(".achievement-panel.active .credential-card")));
         });
       });
     </script>

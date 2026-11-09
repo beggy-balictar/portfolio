@@ -48,24 +48,41 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function popGroup(tiles) {
+function playPop(tiles) {
   if (!tiles.length) return;
 
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   tiles.forEach((tile, i) => {
+    tile.classList.remove("pop-show");
     tile.classList.add("pop-hidden");
-    tile.style.animationDelay = (i * 0.06) + "s";
+    tile.style.animationDelay = reduce ? "" : (i * 0.06) + "s";
+  });
+
+  if (reduce) {
+    tiles.forEach((tile) => tile.classList.remove("pop-hidden"));
+    return;
+  }
+
+  void tiles[0].offsetWidth;
+
+  tiles.forEach((tile) => {
+    tile.classList.remove("pop-hidden");
+    tile.classList.add("pop-show");
     tile.addEventListener("animationend", () => {
       tile.classList.remove("pop-show");
       tile.style.animationDelay = "";
     }, { once: true });
   });
+}
+
+function popGroup(tiles) {
+  if (!tiles.length) return;
+
+  tiles.forEach((tile) => tile.classList.add("pop-hidden"));
 
   const watcher = new IntersectionObserver((entries) => {
     if (entries.some((entry) => entry.isIntersecting)) {
-      tiles.forEach((tile) => {
-        tile.classList.remove("pop-hidden");
-        tile.classList.add("pop-show");
-      });
+      playPop(tiles);
       watcher.disconnect();
     }
   }, { threshold: 0.15 });
